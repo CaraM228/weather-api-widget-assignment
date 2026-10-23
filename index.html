@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather API</title>
+    <link href="./output.css" rel="stylesheet">
     <script src="script.js" type="module" defer></script>
 </head>
-<body>
+<body class="bg-sky-400 font-inter max-w-6xl mx-auto">
     <main>
-        <header>
-            <h1>Weather Forecast in Calgary</h1>
+        <header class="bg-blue-400 grid grid-cols-2">
+            <h1 class="text-center">Weather Forecast in Calgary</h1>
             <button id="toggle-btn">°C / °F</button>
         </header>
 
-        <div class="weather-card-container">
-        <article class="weather-card">
+        <div class="weather-card-container grid grid-cols-3 gap-4 mt-8">
+        <article class="weather-card bg-white border border-black">
             <h2>Monday</h2>
+            <p>date</p>
             <div class="weather-icon"></div>
             <p>15°c</p>
             <p>Clear skies</p>
         </article>
 
-        <article class="weather-card">
+        <article class="weather-card bg-white border border-black">
             <h2>Tuesday</h2>
+            <p>date</p>
             <div class="weather-icon"></div>
             <p>15°c</p>
             <p>Clear skies</p>
         </article>
 
-        <article class="weather-card">
+        <article class="weather-card bg-white border border-black">
             <h2>Wednesday</h2>
+            <p>date</p>
             <div class="weather-icon"></div>
             <p>15°c</p>
             <p>Clear skies</p>
