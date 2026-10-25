@@ -36,6 +36,10 @@ forecastDays.forEach((day, index) => {
     card.querySelector(".temp").textContent = `${day.day.avgtemp_c}°C`;
     //Condtition
     card.querySelector(".condition").textContent = day.day.condition.text;
+
+    //Weather icon
+    console.log(day.day.condition.icon);
+    card.querySelector(".weather-icon").src = "https:" + day.day.condition.icon;
 });
 }
 getWeather();
