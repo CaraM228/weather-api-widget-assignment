@@ -54,7 +54,7 @@ async function getWeather(){
             }
             else if (
             condition === "Cloudy" ||
-            condition === "Partly cloudy" ||
+            condition === "Partly Cloudy" ||
             condition === "Overcast"
             ) {
             icon.src = "./icons/cloud.svg";
