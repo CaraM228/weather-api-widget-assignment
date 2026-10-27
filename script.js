@@ -33,7 +33,7 @@ async function getWeather(){
             const dayName = daysOfWeek[date.getDay()];
 
             card.querySelector(".day").textContent = dayName;
-            card.querySelector(".date").textContent = day.date;
+            card.querySelector(".date").textContent = date.toLocaleDateString();
 
             if(celsius){
             card.querySelector(".temp").textContent = `${day.day.avgtemp_c}°C`;
@@ -80,5 +80,11 @@ const toggleBtn = document.getElementById("toggle-btn");
 
 toggleBtn.addEventListener("click", () => {
     celsius = !celsius;
+
+    if (celsius) {
+        toggleBtn.textContent = "Viewing: °C";
+    } else {
+        toggleBtn.textContent = "Viewing: °F";
+    }
     getWeather();
 })
